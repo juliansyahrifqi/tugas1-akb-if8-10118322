@@ -57,8 +57,6 @@
             android:hint="Username"
         />
 
-
-
         <EditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"

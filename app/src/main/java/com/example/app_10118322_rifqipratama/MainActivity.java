@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvUsername, tvPassword;
-    private String username, password;
+    private TextView tvUsername;
+    private String username;
+    private Button btnLogout, btnProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +25,31 @@ public class MainActivity extends AppCompatActivity {
 
     public void initView() {
         tvUsername = findViewById(R.id.txt_username);
-        tvPassword = findViewById(R.id.txt_password);
+
+        btnProfile = findViewById(R.id.btn_profile);
+        btnLogout = findViewById(R.id.btn_logout);
     }
 
     public void setData() {
         Intent intent = getIntent();
         username = intent.getStringExtra("username");
-        password = intent.getStringExtra("password");
 
-        tvUsername.setText(username);
-        tvPassword.setText(password);
+        tvUsername.setText("Selamat datang, " + username);
+
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+               startActivity(intent);
+           }
+        });
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                finish();
+            }
+        });
     }
 }

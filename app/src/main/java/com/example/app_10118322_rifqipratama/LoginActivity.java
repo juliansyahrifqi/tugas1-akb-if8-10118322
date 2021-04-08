@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,10 +39,20 @@ public class LoginActivity extends AppCompatActivity {
                 username = etUsername.getText().toString();
                 password = etPassword.getText().toString();
 
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                intent.putExtra("username", username);
-                intent.putExtra("password", password);
-                startActivity(intent);
+                if(TextUtils.isEmpty(etUsername.getText())) {
+                    etUsername.setError("Username tidak boleh kosong!");
+                    etUsername.requestFocus();
+                } else if(TextUtils.isEmpty(etPassword.getText())) {
+                    etPassword.setError("Password tidak boleh kosong!");
+                    etPassword.requestFocus();
+                } else {
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    intent.putExtra("username", username);
+                    startActivity(intent);
+
+                    etUsername.setText("");
+                    etPassword.setText("");
+                }
             }
         });
 
