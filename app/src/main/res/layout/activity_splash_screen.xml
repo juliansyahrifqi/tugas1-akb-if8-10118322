@@ -10,12 +10,24 @@
 >
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:id="@+id/splash_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:backgroundTint="@color/blue"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/icon"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_image"
+        android:text="10118322 - My App"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text"
     />
 </RelativeLayout>

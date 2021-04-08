@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileActivity"
+    android:background="@color/primary">
 
     <LinearLayout
         android:id="@+id/profile_photo"
@@ -18,6 +19,7 @@
             android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="75dp"
+            android:src="@drawable/profile"
         />
     </LinearLayout>
 
@@ -31,38 +33,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:hint="@string/nim"
+            android:text="@string/nim"
             android:textSize="20dp"
             android:gravity="center_horizontal"
+            android:textColor="@color/text"
         />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="@string/nama"
+            android:text="@string/nama"
             android:textSize="20dp"
             android:gravity="center_horizontal"
+            android:textColor="@color/text"
         />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="@string/kelas"
+            android:text="@string/kelas"
             android:textSize="20dp"
             android:gravity="center_horizontal"
+            android:textColor="@color/text"
         />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="@string/deskripsi"
+            android:text="@string/deskripsi"
             android:textSize="20dp"
             android:gravity="center_horizontal"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:textColor="@color/text"
         />
     </LinearLayout>
 </RelativeLayout>

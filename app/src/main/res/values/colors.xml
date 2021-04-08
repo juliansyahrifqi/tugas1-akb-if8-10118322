@@ -14,4 +14,5 @@
     <color name="secondary">#FB743E</color>
     <color name="textTint">#9FB8AD</color>
     <color name="text">#C5D7BD</color>
+    <color name="bar_color">#212740</color>
 </resources>
