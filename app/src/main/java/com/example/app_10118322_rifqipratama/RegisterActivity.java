@@ -11,6 +11,9 @@ import android.widget.EditText;
 
 import org.w3c.dom.Text;
 
+// Dibuat tanggal 7 April 2021
+// Oleh 10118322 - Rifqi Pratama Juliansyah - IF8
+
 public class RegisterActivity extends AppCompatActivity {
 
     private Button btnLogin, btnRegister;
@@ -60,7 +63,17 @@ public class RegisterActivity extends AppCompatActivity {
                     etNim.setText("");
                     etUsername.setText("");
                     etPassword.setText("");
+                    finish();
                 }
+            }
+        });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

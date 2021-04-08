@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 
+// Dibuat tanggal 7 April 2021
+// Oleh 10118322 - Rifqi Pratama Juliansyah - IF8
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override

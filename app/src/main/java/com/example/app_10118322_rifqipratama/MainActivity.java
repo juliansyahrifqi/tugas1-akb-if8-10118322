@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+// Dibuat tanggal 6 April 2021
+// Oleh 10118322 - Rifqi Pratama Juliansyah - IF8
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvUsername;
