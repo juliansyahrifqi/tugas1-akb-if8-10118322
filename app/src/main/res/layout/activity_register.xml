@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:background="@color/primary">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +21,8 @@
             android:text="REGISTER"
             android:textSize="40sp"
             android:gravity="center_horizontal"
-            />
+            android:textColor="@color/secondary"
+        />
     </LinearLayout>
 
     <LinearLayout
@@ -30,7 +32,7 @@
         android:layout_marginTop="150dp"
         android:layout_marginRight="12dp"
         android:orientation="vertical"
-        >
+    >
 
         <EditText
             android:id="@+id/et_nama"
@@ -39,6 +41,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="Nama"
+            android:textColor="@color/text"
+            android:textColorHint="@color/textTint"
+            android:backgroundTint="@color/textTint"
         />
 
         <EditText
@@ -47,6 +52,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="NIM"
+            android:textColor="@color/text"
+            android:textColorHint="@color/textTint"
+            android:backgroundTint="@color/textTint"
         />
 
         <EditText
@@ -55,6 +63,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="Username"
+            android:textColor="@color/text"
+            android:textColorHint="@color/textTint"
+            android:backgroundTint="@color/textTint"
         />
 
         <EditText
@@ -64,6 +75,9 @@
             android:inputType="textPassword"
             android:layout_marginTop="10dp"
             android:hint="Password"
+            android:textColor="@color/text"
+            android:textColorHint="@color/textTint"
+            android:backgroundTint="@color/textTint"
         />
 
         <Button

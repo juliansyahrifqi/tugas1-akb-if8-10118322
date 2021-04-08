@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My App</string>
+    <string name="nama">Rifqi Pratama Juliansyah</string>
+    <string name="nim">10118322</string>
+    <string name="kelas">IF-8</string>
+    <string name="deskripsi">Halo, nama saya Rifqi biasa dipanggil Iki, saya tinggal di daerah Cibiru, Kota Bandung. Saya mempunyai hobi yaitu bermain gitar atau ngeband."</string>
 </resources>

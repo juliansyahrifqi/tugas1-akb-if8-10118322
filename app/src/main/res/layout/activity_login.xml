@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@color/primary">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,12 +19,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="LOGIN"
+            android:textColor="@color/secondary"
             android:textSize="40sp"
             android:gravity="center_horizontal"
+            android:fontFamily="monospace"
         />
-
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,6 +41,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
+            android:textColor="@color/text"
+            android:backgroundTint="@color/textTint"
+            android:textColorHint="@color/textTint"
         />
 
         <EditText
@@ -49,6 +53,9 @@
             android:inputType="textPassword"
             android:layout_marginTop="10dp"
             android:hint="Password"
+            android:textColor="@color/text"
+            android:backgroundTint="@color/textTint"
+            android:textColorHint="@color/textTint"
         />
 
         <Button
@@ -59,6 +66,7 @@
             android:text="Login"
             android:textColor="@color/white"
             android:layout_marginTop="14dp"
+
         />
 
         <Button

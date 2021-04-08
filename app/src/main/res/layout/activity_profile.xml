@@ -31,8 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:hint="10118322"
-            android:textSize="25dp"
+            android:hint="@string/nim"
+            android:textSize="20dp"
             android:gravity="center_horizontal"
         />
 
@@ -40,8 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Rifqi Pratama Juliansyah"
-            android:textSize="25dp"
+            android:hint="@string/nama"
+            android:textSize="20dp"
             android:gravity="center_horizontal"
         />
 
@@ -49,8 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="IF-8"
-            android:textSize="25dp"
+            android:hint="@string/kelas"
+            android:textSize="20dp"
             android:gravity="center_horizontal"
         />
 
@@ -58,9 +58,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Halo, nama saya Rifqi biasa dipanggil Iki, saya tinggal di daerah Cibiru, Kota Bandung. Saya mempunyai hobi yaitu bermain gitar atau ngeband."
-            android:textSize="25dp"
+            android:hint="@string/deskripsi"
+            android:textSize="20dp"
             android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
         />
     </LinearLayout>
 </RelativeLayout>
